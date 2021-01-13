@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="//code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html">My Blog</a></h1>
+        <p>welcome to the blog of
+            <span> Nadir</span>
+
+        </p>
+    </header>
+    <div class="container">
+        <div class="left-column ">
+            <div class="left-column1">
+
+                <img src="/images/nature.jpg" alt="glace mountain">
+                <div class="dec">
+                    <h2>Nature</h2>
+                    <h5>Title description, <span class="opacity">January 9, 2021</span></h5>
+                    <p>Nature makes the world a beautiful and livable sanctuary. It blesses the world with all great things, from vibrant landscapes to different species. Accordingly, one should always take part in making the world a better place because
+                        once nature is ruined, everything is at stake. The world will not just be a dull place but sparse and toxic abode.</p>
+                    <button><a href="Nature.html">Read More >></a></button>
+                </div>
+
+
+
+
+
+            </div>
+            <div class="left-column1 ">
+
+                <img src="/images/CITY-SHA-1.jfif" alt="glace mountain">
+                <div class="dec">
+                    <h2>Shanghai</h2>
+                    <h5>Title description, <span class="opacity">September 18, 2018</span></h5>
+                    <p>Shanghai (Chinese: 上海, Shanghainese pronunciation: [zɑ̃̀.hɛ́] (About this soundlisten), Standard Mandarin pronunciation: [ʂâŋ.xài] (About this soundlisten)) is one of the four direct-administered municipalities of the People's Republic
+                        of China. It is under the direct administration of the State Council of China. The city is located on the southern estuary of the Yangtze, with the Huangpu River flowing through it. With a population of 24.28 million as of 2019,
+                        it is the most populous urban area in China and the third most populous city proper in the world. Shanghai is a global center for finance, research, technology, manufacturing, and transportation, and the Port of Shanghai is the
+                        world's busiest container port.</p>
+                    <button><a href="Shanghai.html">Read More >></a></button>
+                </div>
+
+
+
+
+            </div>
+        </div>
+        <div class="right-column  ">
+            <div class="right-column1">
+
+                <img src="/images/profile.jpeg" alt="glace mountain" style="height: ;">
+                <div class="dec">
+                    <h3>My name</h3>
+                    <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
+                </div>
+
+
+
+
+            </div>
+            <div class="right-column2 ">
+                <div class="post">
+                    <h4>Popular Post</h4>
+                </div>
+
+
+                <ul class="hoverlist">
+                    <li class="post1">
+                        <a href="">
+                            <img src="/images/china.jpg" style="width: 50px;">
+                            <span class="pos">China</span></a>
+                        <br> </li>
+                    <li class="post1">
+                        <a href="">
+                            <img src="/images/bali.jpg" style="width: 50px;">
+                            <span class="pos">Bali</span></a>
+                        <br> </li>
+                    <li class="post1">
+                        <a href="Shanghai.html">
+                            <img src="/images/shanghai.jpg" style="width: 50px;">
+                            <span class="pos">Shanghai</span>
+                        </a>
+                        <br> </li>
+
+                </ul>
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="bloc1">
+            <h3>Follow me :</h3>
+            <a href="" class="fa fa-facebook"></a>
+            <a href="" class="fa fa-instagram"></a>
+            <a href="" class="fa fa-twitter"></a>
+            <a href="" class="fa fa-youtube"></a>
+
+
+
+
+        </div>
+        <div class="bloc2"></div>
+
+    </footer>
+    <div id="toTop"><i class="fa fa-arrow-up"></i></div>
+</body>
+<script>
+    $(function() {
+        $.fn.scrollToTop = function() {
+            $(this).hide().removeAttr("href");
+            if ($(window).scrollTop() != "0") {
+                $(this).fadeIn("slow")
+            }
+            var scrollDiv = $(this);
+            $(window).scroll(function() {
+                if ($(window).scrollTop() == "0") {
+                    $(scrollDiv).fadeOut("slow")
+                } else {
+                    $(scrollDiv).fadeIn("slow")
+                }
+            });
+            $(this).click(function() {
+                $("html, body").animate({
+                    scrollTop: 0
+                }, "slow")
+            })
+        }
+    });
+    $(function() {
+        $("#toTop").scrollToTop();
+    });
+</script>
+
+</html>

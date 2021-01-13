@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="//code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html">My Blog</a></h1>
+        <p>Blog of
+            <span>Shanghai</span>
+
+        </p>
+    </header>
+    <div class="container">
+        <div class="left-column-pg1">
+            <div class="left-column1-pg1">
+
+                <img src="/images/shanghai2.jpg" alt="glace mountain" style="width: 33%;">
+                <img src="/images/shanghai3.jpg" alt="glace mountain" style="width: 33%;">
+                <img src="/images/shanghai4.jpg" alt="glace mountain" style="width: 33.2%;">
+                <div class="dec-page1">
+                    <h2>Shanghai</h2>
+                    <h5>Title description, <span class="opacity">January 9, 2021</span></h5>
+                    <p>Nature makes the world a beautiful and livable sanctuary. It blesses the world with all great things, from vibrant landscapes to different species. Accordingly, one should always take part in making the world a better place because
+                        once nature is ruined, everything is at stake. The world will not just be a dull place but sparse and toxic abode. Nature makes the world a beautiful and livable sanctuary. It blesses the world with all great things, from vibrant
+                        landscapes to different species. Accordingly, one should always take part in making the world a better place because once nature is ruined, everything is at stake. The world will not just be a dull place but sparse and toxic abode.
+                        Nature makes the world a beautiful and livable sanctuary. It blesses the world with all great things, from vibrant landscapes to different species. Accordingly, one should always take part in making the world a better place because
+                        once nature is ruined, everything is at stake. The world will not just be a dull place but sparse and toxic abode.Nature makes the world a beautiful and livable sanctuary. It blesses the world with all great things, from vibrant
+                        landscapes to different species.<br>
+                        <p> Accordingly, one should always take part in making the world a better place because once nature is ruined, everything is at stake. The world will not just be a dull place but sparse and toxic abode.Nature makes the world a beautiful
+                            and livable sanctuary. It blesses the world with all great things, from vibrant landscapes to different species. Accordingly, one should always take part in making the world a better place because once nature is ruined, everything
+                            is at stake. The world will not just be a dull place but sparse and toxic abode. Nature makes the world a beautiful and livable sanctuary. It blesses the world with all great things, from vibrant landscapes to different species
+                            .
+                        </p> <br>
+                        <p>Accordingly, one should always take part in making the world a better place because once nature is ruined, everything is at stake. The world will not just be a dull place but sparse and toxic abode.Nature makes the world a beautiful
+                            and livable sanctuary. It blesses the world with all great things, from vibrant landscapes to different species. Accordingly, one should always take part in making the world a better place because once nature is ruined, everything
+                            is at stake. The world will not just be a dull place but sparse and toxic abode. Nature makes the world a beautiful and livable sanctuary. It blesses the world with all great things, from vibrant landscapes to different species.
+                            Accordingly, one should always take part in making the world a better place because once nature is ruined, everything is at stake. The world will not just be a dull place but sparse and toxic abode.Nature makes the world a
+                            beautiful and livable sanctuary. It blesses the world with all great things, from vibrant landscapes to different species. Accordingly, one should always take part in making the world a better place because once nature is ruined,
+                            everything is at stake. The world will not just be a dull place but sparse and toxic abode.Nature makes the world a beautiful and livable sanctuary. It blesses the world with all great things, from vibrant landscapes to different
+                            species. Accordingly, one should always take part in making the world a better place because once nature is ruined, everything is at stake. The world will not just be a dull place but sparse and toxic abode.</p>
+
+                </div>
+
+
+
+
+
+            </div>
+
+
+
+
+
+        </div>
+
+        <div class="right-column">
+
+            <div class="right-column2 ">
+                <div class="post">
+                    <h4>Popular Post</h4>
+                </div>
+
+
+                <ul class="hoverlist">
+                    <li class="post1">
+                        <a href="">
+                            <img src="/images/china.jpg" style="width: 50px;">
+                            <span class="pos">China</span></a>
+                        <br> </li>
+                    <li class="post1">
+                        <a href="">
+                            <img src="/images/bali.jpg" style="width: 50px;">
+                            <span class="pos">Bali</span></a>
+                        <br> </li>
+                    <li class="post1">
+                        <a href="Nature.html">
+                            <img src="/images/nature.jpg" style="width: 50px;">
+                            <span class="pos">Nature</span></a>
+                        <br> </li>
+
+
+                </ul>
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <div class="bloc1">
+            <h3>Follow me :</h3>
+            <a href="" class="fa fa-facebook"></a>
+            <a href="" class="fa fa-instagram"></a>
+
+            <a href="" class="fa fa-twitter"></a>
+            <a href="" class="fa fa-youtube"></a>
+
+
+
+
+        </div>
+        <div class="bloc2"></div>
+
+    </footer>
+    <div id="toTop"><i class="fa fa-arrow-up"></i></div>
+</body>
+<script>
+    $(function() {
+        $.fn.scrollToTop = function() {
+            $(this).hide().removeAttr("href");
+            if ($(window).scrollTop() != "0") {
+                $(this).fadeIn("slow")
+            }
+            var scrollDiv = $(this);
+            $(window).scroll(function() {
+                if ($(window).scrollTop() == "0") {
+                    $(scrollDiv).fadeOut("slow")
+                } else {
+                    $(scrollDiv).fadeIn("slow")
+                }
+            });
+            $(this).click(function() {
+                $("html, body").animate({
+                    scrollTop: 0
+                }, "slow")
+            })
+        }
+    });
+    $(function() {
+        $("#toTop").scrollToTop();
+    });
+</script>
+
+</html>
